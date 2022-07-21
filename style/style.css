@@ -1,0 +1,265 @@
+/* ----fonts------ */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+body{
+
+}
+main{
+  display: flex;
+  justify-content: center;
+   
+}
+
+.container{
+    background-color:#161616;
+    width:870px;
+    padding: 20px;
+    
+
+}
+.container:hover{
+     background-color: aqua;
+    animation:sliding 1s ease-in-out;
+}
+.main-div{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.main{
+    color: white;  
+    padding: 5px; 
+}
+
+.main h2{
+    font-size: 3.5rem;
+}
+.sub-main{
+    width:120px;
+    height: 30px;
+    background-color: red;
+    border-radius: 3px;
+}
+.sub-main p{
+    font-family: 'Poppins', sans-serif;
+    justify-content: center;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+
+
+.banner-image{
+    width: 100%;
+}
+
+/*----
+ End first part-1 
+           -------- */
+
+/*-------------
+ Second part started
+            --------------- */
+.container-2{
+    display: grid;
+    grid-template-columns: 270px 600px;
+    background-color:whitesmoke;    
+    padding: 20px;
+}
+
+.main-blog{
+    margin-right:0;
+
+}
+.blog{
+    border:20px solid #161616;
+    width:200px;
+    padding: 5px;
+   text-align: center;
+
+}
+.blog a{
+    text-decoration: none;
+    color: black;
+}
+.sub-blog{
+    background-color: rgb(237, 11, 11);
+}
+
+
+.main-transfer{
+    display: grid;
+    grid-template-columns: repeat(3,1fr); 
+    margin-bottom: 3px;  
+    
+}
+
+.transfer{
+    margin: 5px;
+    padding:5px;
+}
+.transfer-2{
+    margin: 3px;
+    padding: 2px;
+}
+
+.blog-image{
+    display:flex;
+}
+
+.blog-image img{
+    width:190px;
+    height:150px;
+    padding-bottom: 5px;
+}
+
+.blog-image-2{
+    display: flex;
+}
+
+
+.blog-image-2 img{
+    width: 80px;
+    height: 60px;
+}
+
+
+.fa-clock {
+    padding-right: 5px;
+    margin: 3px;
+    color:grey;
+}
+.fa-message{
+    padding-left: 20px;
+    padding-right: 5px;
+    color:gray;
+}
+
+.view{
+    display: none;
+}
+
+
+
+/* start footer section */
+
+.footer{
+    height: 300px;
+    background-color: #161616;
+    justify-content: center;
+}
+.footer h2{
+    padding-top: 50px;
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+}
+  
+
+hr {
+    height:0px;
+    width: 80%;
+    color:gray;
+  }
+ 
+
+
+  .nav-footer{
+    display:flex;
+    justify-content: center;
+  }
+.nav-footer a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+
+.social-network{
+    display:flex;
+    justify-content: center;
+}
+
+
+.social-network a{
+    padding:10px;
+}
+
+.fa-youtube{
+    color:rgb(0, 21, 255);
+
+}
+
+/*---------------- 
+    Small device (Mobile
+             ----------*/
+@media screen and (max-width:576px){
+    .main-div{
+        grid-template-columns: repeat(1,1fr);
+        flex-direction: column;
+    }
+
+    /* .main-p{
+        height: 50px;
+        text-overflow: ellipsis;
+    } */
+
+    .container-2{
+        grid-template-columns: repeat(1,1fr);
+        flex-direction:column;
+    }
+
+    .main-transfer{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .footer{
+        height: 500px;
+    }
+
+    .nav-footer{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .nav-footer a{
+        text-align: center;
+    }
+}
+
+/*-----------
+   Mediam Device(Tablet)
+               ---------------- */
+@media screen and (min-width:577px) and (max-width:700px){
+    .main-transfer{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+
+    .container-2{
+        grid-template-columns: repeat(1,1fr);
+        flex-direction:column;
+    }
+
+    .view-all{
+        display: flex;
+        justify-content: center;
+    }
+
+    .view{
+        display: block;
+        text-align: center;
+    }
+
+    .view p{
+        background-color: red;
+        width: 150px;
+        height: 40px;
+        border-radius: 5px;
+        color: white;
+        padding-top: 20px;
+        font-size: 20px;
+
+
+    }
+
+}
